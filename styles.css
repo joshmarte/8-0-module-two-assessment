@@ -26,5 +26,17 @@ header h1 {
 
 #dropDown {
   padding: 25px;
-  margin-left: 50px;
+  margin-left: 95px;
+}
+
+#divForm {
+  width: 80%;
+  margin: 0 auto;
+  font-size: larger;
+  padding-left: 20px;
+}
+#display-info {
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 40px;
 }
