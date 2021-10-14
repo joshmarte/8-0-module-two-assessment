@@ -14,6 +14,7 @@ fetch("https://ghibliapi.herokuapp.com/films").then((res) => {
     document
       .querySelector("#dropDown select")
       .addEventListener("change", (event) => {
+        event.preventDefault();
         document.querySelector("#display-info h3").textContent =
           data[event.target.value].title;
         document.querySelector("#display-info #year").textContent =
@@ -22,4 +23,19 @@ fetch("https://ghibliapi.herokuapp.com/films").then((res) => {
           data[event.target.value].description;
       });
   });
+});
+
+let form = document.querySelector("#divForm form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  let strong = document.createElement("strong");
+  let li = document.createElement("li");
+  strong.textContent = document.querySelector("h3").textContent + ": ";
+  li.textContent = document.querySelector("#inputBox").value;
+
+  document.querySelector("ul").append(li);
+  li.prepend(strong);
+
+  document.querySelector("#inputBox").value = "";
 });

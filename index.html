@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Ghibli</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
 </head>
 <body>
     <div id="main">
         <header id="header">
-            <div id="totoImg"><img src="images/ghibli-logo.png" alt="Ghibli Logo"></div>
+            <div id="totoImg"><img src="./images/ghibli-logo.png" alt="Ghibli Logo"></div>
             <h1>Ghibli Review App</h1>
         </header>
         
@@ -24,16 +24,12 @@
             <h3></h3>
             <p id="year"></p>
             <p id="desc"></p>
-            <br>
-            <br>
         </div>
 
         <div id="divForm">
             <form id="review">
-                <label for="review">
-                    Your Review
-                    <input type="text"/>
-                </label>
+                <label for="review">Your Review</label>
+                <input id="inputBox" type="text"/>
                 <input id="submitBttn" type="submit" value="Submit Review"/>
             </form>
         </div>
