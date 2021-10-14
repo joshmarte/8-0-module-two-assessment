@@ -1,0 +1,30 @@
+body {
+  background-color: lavender;
+  font-family: monospace;
+}
+
+#main {
+  width: 75%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: skyblue;
+  display: grid;
+  grid-template: "img img title title";
+}
+
+header img {
+  grid-template-areas: "img";
+  width: 500px;
+  height: auto;
+}
+
+header h1 {
+  grid-template-areas: "title";
+}
+
+#dropDown {
+  padding: 25px;
+  margin-left: 50px;
+}
